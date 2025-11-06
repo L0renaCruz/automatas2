@@ -122,17 +122,17 @@ console.log("\n/////////////////////////////////////////////////////////////////
 //////////////PRACTICA FINAL - MÉTODOS APLICADOS A UN ARREGLO DE OBJETOS//////////
 const personas = [
   { nombre: "Ana", edad: 17, ciudad: "México" },
-  { nombre: "Luis", edad: 22, ciudad: "Madrid" },
+  { nombre: "Luis", edad: 22, ciudad: "Canada" },
   { nombre: "Carmen", edad: 30, ciudad: "México" },
-  { nombre: "Pedro", edad: 25, ciudad: "Buenos Aires" },
+  { nombre: "Pedro", edad: 25, ciudad: "Argentina" },
   { nombre: "María", edad: 19, ciudad: "Madrid" }
 ];
 
 const mayoresDeEdad = personas.filter((persona) => persona.edad > 18);
 console.log("Personas mayores de 18 años:", mayoresDeEdad, "\n");
 
-const hayDeMadrid = personas.some((persona) => persona.ciudad === "Madrid");
-console.log("¿Hay alguien de Madrid?:", hayDeMadrid, "\n");
+const hayDeArgentina = personas.some((persona) => persona.ciudad === "Argentina");
+console.log("¿Hay alguien de Argentina?:", hayDeArgentina, "\n");
 
 const mayores = personas.every((persona) => persona.edad >= 18);
 console.log("¿Todos son mayores de edad?:", mayores, "\n");
